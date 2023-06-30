@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ 
+  <script>
+    function Deci() { //Formel: x/60   //RECHENFUNKTION 1 HEX TO DECIMAL
+      var Eingabe = document.getElementById("Eingabe_Zeit").value;
+      var Zahl = Number(Eingabe) / 60;
+      var Ergebnis = Zahl.toFixed(2);
+       document.getElementById("Ergebnis").textContent = Ergebnis +"h";
+    }
+    function Hex() { //Formel: x*60   //RECHENFUNKTION 2 DECIMAL TO HEX
+      var Eingabe2 = document.getElementById("Eingabe_Zeit2").value;
+      var Komma = Eingabe2.replace(/,/g, '.');
+      var Zahl2 = Number(Komma) * 60;
+       document.getElementById("Ergebnis2").textContent = Zahl2 +"min.";
+    }
+  </script>
+ </head>
+ 
+ <style>
+  body { /*BG IMAGE AND MORE*/
+   background-image: url("assets/bg-img.jpg");
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-size: cover  
+ }
+  ul.nav { /*list style to navbar*/
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+   background-color: #333;
+   font-family: arial;
+ }
+  ul.foot { /*list style to footer*/
+   list-style-type: none;
+   margin-top: 150px;
+   margin-left: 0;
+   margin-right: 0;
+   margin-bottom: 0;
+   padding: 0;
+   overflow: hidden;
+   background-color: #333;
+   font-family: arial;
+ }
+
+  li.nav { /*sideways stack*/
+   float: left;
+ }
+
+  li.foot { /*sideways stack*/
+   float: left;
+ }
+
+  li.nav a.nav { /*Navbar BG*/
+   display: block;
+   color: #f0f4f5;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+   font-family: arial;
+ }
+
+  li.foot  p.foot { /*footer BG*/
+   display: block;
+   text-align: center;
+   padding: 14px 16px;
+   font-family: arial;
+   color: #daf5e9;
+ }
+
+  li.nav a.nav:hover { /* Change the link color to #111 (black) on hover */
+   background-color: #111;
+ }
+  div.Rechner { /*class rechner for alignment of hex to deci*/
+   margin-top: 200px;
+   margin-left: auto;
+   margin-right: auto;
+   text-align: center;
+   text-color: #000000;
+   button-align: center;
+   display: block;
+   block-color: #ffffff;
+   box-shadow: 1px 1px 7px 5px rgba(0, 0, 0, 0.5);
+   background-color: #ffffff;
+   width: 50%;
+   hight: fit-content;
+   padding-top: 30px;
+   padding-left: 80px;
+   padding-right: 80px;
+   padding-bottom: 40px;
+   font-family: arial;
+ }
+  div.Rechner2 { /*class rechner for alignment of deci to hex*/
+   margin-top: 200px;
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: 200px;
+   text-align: center;
+   text-color: #000000;
+   button-align: center;
+   display: block;
+   block-color: #ffffff;
+   box-shadow: 1px 1px 7px 5px rgba(0, 0, 0, 0.5);
+   background-color: #ffffff;
+   width: 50%;
+   hight: fit-content;
+   padding-top: 30px;
+   padding-left: 80px;
+   padding-right: 80px;
+   padding-bottom: 40px;
+   font-family: arial;
+ }
+  img.logo {
+   margin-left: 15px;
+   margin-top: 10px;
+   width:60px;
+ }
+  div.logo {
+   display: block;
+   color: #333;
+   background-color: #333;
+ }
+ </style>
+ 
+ <body>
+  <div class="logo">
+     <img src="assets/coffee-pot.png" class="logo" alt="logo"> <!--Logo oben links-->
+   <ul class="nav">
+    <li class="nav"><a href="home.html" class="nav">Home</a></li>
+    <li class="nav"><a href="constuction.html" class="nav">News</a></li>
+    <li class="nav"><a href="constuction.html" class="nav">Contact</a></li>
+    <li class="nav"><a href="constuction.html" class="nav">About</a></li>
+   </ul>
+  </div>
+                                                         <!--ZEITRECHNER 1-->
+  <div class="Rechner"> <!--Visuals-->
+   <h1 style=" font-size: 45px;">Hex zu Dezimal</h1>
+    <p style=" font-size:16px;"><b> Funktion:</b> Dies ist ein Hex-zu-Dezimal-Rechner. <br>
+        Tragen Sie ihre Minutenzahl in das Eigabefeld <br>
+        und clicken Sie auf den "Dezimal"-Knopf. <br>
+        Ihnen wird dann eine Dezimalzahl ausgegeben, <br>
+        die der Anzahl an Stunden entspricht. <br>
+        <i> Formel: (Minuten)/60</i>
+    </p>
+   <form>            <!--Input and Button-->
+    <label for="Eingabe_Zeit" style="font-size:20px;"><b> Minuten: </b></label>
+    <input type="text" id="Eingabe_Zeit">
+    <button type=button onclick="Deci()" >Dezimal</button>
+   </form>
+
+   <div style="align: center;"> <!--Result with border-->
+    <p id="Ergebnis" style="border: 3px solid #5fb38e; width: fit-content;
+       padding: 10px; margin-left: auto; margin-right: auto; border-radius:8px;"><b>Ergebnis</b>
+    </p>
+   </div>
+  </div>
+                                                        <!--ZEITRECHNER 2-->
+  <div class="Rechner"> <!--Visuals-->
+   <h1 style=" font-size: 45px;">Dezimal zu Hex</h1>
+    <p style=" font-size:16px;"><b> Funktion:</b> Dies ist ein Dezimal-zu-Hex-Rechner. <br>
+        Tragen Sie ihre Stundenzahl in das Eigabefeld <br>
+        und clicken Sie auf den "Hex"-Knopf. <br>
+        Ihnen wird dann eine Hexzahl ausgegeben, <br>
+        die der Anzahl an Minuten entspricht. <br>
+        <i> Formel: (Minuten)*60</i>
+    </p>
+   <form>            <!--Input and Button-->
+    <label for="Eingabe_Zeit2" style="font-size:20px;"><b> Stunden: </b></label>
+    <input type="text" id="Eingabe_Zeit2">
+    <button type=button onclick="Hex()" >Hex</button>
+   </form>
+
+   <div style="align: center;"> <!--Result with border-->
+    <p id="Ergebnis2" style="border: 3px solid #5fb38e; width: fit-content;
+       padding: 10px; margin-left: auto; margin-right: auto; border-radius:8px;"><b>Ergebnis</b>
+    </p>
+    <p><i>Wenn das Ergebnis NaNmin. ist, Zahl als <u><b>a.b</b></u> statt <b>a,b</b> eingeben!</i></p>
+   </div>
+  </div>
+
+  <div>    <!--Page Footer-->
+   <ul class="foot">
+    <li class="foot"><p class="foot">Page made by DELTA</p></li>
+    <li class="foot"><p class="foot">©2023 All right reserved.</p></li>
+    <li class="foot"><p class="foot">contact me for any difficulties or personalisation options</p></li>
+   </ul>
+  </div>
+ 
+ </body>
+</html>

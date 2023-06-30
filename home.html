@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <!-- head empty (like in IRL)-->
+ </head>
+
+ <style>
+  body { /*BG IMAGE AND MORE*/
+   background-image: url("assets/bg-img.jpg");
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-size: cover  
+ } 
+                       /* .nav always for the NAVIGATION BAR!! */
+  ul.nav { /*list style to navbar*/
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+   background-color: #333;
+   font-family: arial;
+ }
+
+  ul.foot { /*list style to footer*/
+   list-style-type: none;
+   margin-top: 150px;
+   margin-left: 0;
+   margin-right: 0px;
+   margin-bottom: 0;
+   padding: 0;
+   overflow: hidden;
+   background-color: #333;
+   font-family: arial;
+ }
+
+  li.nav { /*sideways stack*/
+   float: left;
+ }
+
+  li.foot { /*sideways stack*/
+   float: left;
+ }
+
+  li.nav a.nav { /*BG*/
+   display: block;
+   color: white;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+ }
+
+  li.foot  p.foot { /*footer BG*/
+   display: block;
+   text-align: center;
+   padding: 14px 16px;
+   font-family: arial;
+   color: #daf5e9;
+ }
+
+  li.nav a.nav:hover { /* Change the link color to #111 (black) on hover */
+   background-color: #111;
+ }
+  div.rectangle {
+   height: fit-content;
+   width: auto;
+   padding: 20px;
+   margin-top: 30px;
+   margin-left: 20px;
+   margin-right: 20px;
+   background-image: url("assets/Caffeine_logo2.png");
+   background-repeat: no-repeat;
+   background-position: right;
+   background-attachment: static;
+   background-color: #408069; /*#408069-DARK #4ac79b-Light*/
+   font-family: arial;
+ }
+  .welcomeText {
+   color: white;
+   margin-left: 30px;
+ }
+  img.logo {
+   margin-left: 15px;
+   margin-top: 10px;
+   width:60px;
+ }
+  div.logo {
+   display: block;
+   color: #333;
+   background-color: #333;
+ }
+ </style>
+
+ <body>
+ 
+  <div class="logo">
+     <img src="assets/coffee-pot.png" class="logo" alt="logo">
+   <ul class="nav">
+    <li class="nav"><a href="home.html" class="nav">Home</a></li>
+    <li class="nav"><a href="constuction.html" class="nav">News</a></li>
+    <li class="nav"><a href="constuction.html" class="nav">Contact</a></li>
+    <li class="nav"><a href="constuction.html" class="nav">About</a></li>
+   </ul>
+  </div>
+  
+  <div class="rectangle" >
+   <h1 class="welcomeText">Welcome to my Homepage!</h1>
+    <p class="welcomeText" style="font-size: 20px;">Use the links below to see my Projects:</p>
+    <ul class="welcomeText">
+     <li><a href="Zeit.html" class="welcomeText" style="font-size: 20px;">Zeitrechner</a></li>
+     <li><p class="welcomeText" style="font-size: 20px;">Project2 - WIP</p></li>
+     <li><p class="welcomeText" style="font-size: 20px;">Project3 - WIP</p></li>
+    </ul>
+  </div>
+
+  <div>    <!--Page Footer-->
+   <ul class="foot">
+    <li class="foot"><p class="foot">Page made by DELTA</p></li>
+    <li class="foot"><p class="foot">©2023 All right reserved.</p></li>
+    <li class="foot"><p class="foot">contact me for any difficulties or personalisation options</p></li>
+   </ul>
+  </div>
+
+ </body>
+</html>
