@@ -6,13 +6,13 @@
   <meta http-equiv='pragma' content='no-cache'>
  
   <script>
-    function Deci() { //Formel: x/60   //RECHENFUNKTION 1 HEX TO DECIMAL
+    function Deci() { //Formel: x/60   //RECHENFUNKTION 1 HEXAL TO DECIMAL
       var Eingabe = document.getElementById("Eingabe_Zeit").value;
       var Zahl = Number(Eingabe) / 60;
       var Ergebnis = Zahl.toFixed(2);
        document.getElementById("Ergebnis").textContent = Ergebnis +"h";
     }
-    function Hex() { //Formel: x*60   //RECHENFUNKTION 2 DECIMAL TO HEX
+    function Hex() { //Formel: x*60   //RECHENFUNKTION 2 DECIMAL TO HEXAL
       var Eingabe2 = document.getElementById("Eingabe_Zeit2").value;
       var Komma = Eingabe2.replace(/,/g, '.');
       var Zahl2 = Number(Komma) * 60;
@@ -139,8 +139,8 @@
   </div>
                                                          <!--ZEITRECHNER 1-->
   <div class="Rechner"> <!--Visuals-->
-   <h1 style=" font-size: 45px;">Hex zu Dezimal</h1>
-    <p style=" font-size:16px;"><b> Funktion:</b> Dies ist ein Hex-zu-Dezimal-Rechner. <br>
+   <h1 style=" font-size: 45px;">Hexal zu Dezimal</h1>
+    <p style=" font-size:16px;"><b> Funktion:</b> Dies ist ein Hexal-zu-Dezimal-Rechner. <br>
         Tragen Sie ihre Minutenzahl in das Eigabefeld <br>
         und clicken Sie auf den "Dezimal"-Knopf. <br>
         Ihnen wird dann eine Dezimalzahl ausgegeben, <br>
@@ -161,8 +161,8 @@
   </div>
                                                         <!--ZEITRECHNER 2-->
   <div class="Rechner"> <!--Visuals-->
-   <h1 style=" font-size: 45px;">Dezimal zu Hex</h1>
-    <p style=" font-size:16px;"><b> Funktion:</b> Dies ist ein Dezimal-zu-Hex-Rechner. <br>
+   <h1 style=" font-size: 45px;">Dezimal zu Hexal</h1>
+    <p style=" font-size:16px;"><b> Funktion:</b> Dies ist ein Dezimal-zu-Hexal-Rechner. <br>
         Tragen Sie ihre Stundenzahl in das Eigabefeld <br>
         und clicken Sie auf den "Hex"-Knopf. <br>
         Ihnen wird dann eine Hexzahl ausgegeben, <br>
